@@ -9,6 +9,8 @@ function TodoForm({ addTodo }) {
     setText("");
   };
   return (
+    <div className={styles.todoFormContainer}>
+
     <form onSubmit={onSubmitHandler}>
       <input
         type="text"
@@ -18,6 +20,7 @@ function TodoForm({ addTodo }) {
       />
       <button type="submit">Submit</button>
     </form>
+    </div>
   );
 }
 
